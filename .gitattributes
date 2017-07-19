@@ -1,0 +1,9 @@
+.launches/* linguist-vendored
+.settings/* linguist-vendored
+Debug/* linguist-vendored
+easylink/* linguist-vendored
+src/* linguist-vendored
+targetConfigs/* linguist-vendored
+*.defs linguist-vendored
+*cmd linguist-vendored
+*.cfg linguist-vendored
