@@ -25,7 +25,7 @@
 #define SLEEP_TIME 1000000/Clock_tickPeriod // 1 second
 
 /**
- * Gets the measurement and sends to the reception module.
+ * Gets the measurement and sends to the reception module. Loops forever.
  * */
 void doTransmission ();
 

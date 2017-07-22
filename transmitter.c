@@ -1,7 +1,7 @@
 #include "transmitter.h"
 
 /**
- * Read the last measurement available from the sensor. Loops forever.
+ * Read the last measurement available from the sensor.
  * @param data the buffer where to put the measurement paramenters. Should hava
  *             at least PACKET_LEN bytes of size
  * */
