@@ -1,7 +1,6 @@
 #include "ToServer_Com.h"
 
 
-
 void ToServerCom_init () {
     UART_init();
 
@@ -27,7 +26,7 @@ int ToServerCom_write (uint8_t *data, UInt len) {
 #ifdef DEBUG_SRV_COM
         printf("[ToServerCom_write] failed to write data\n");
 #endif
-        return nrBytes;
+        return -1;
     }
 
 #ifdef DEBUG_SRV_COM

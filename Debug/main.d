@@ -171,6 +171,7 @@ main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/inclu
 main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/linkage.h
 main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdio.h
 main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdarg.h
+main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/string.h
 main.obj: ../Board.h
 main.obj: /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/tidrivers_cc13xx_cc26xx_2_21_00_04/packages/ti/drivers/Power.h
 main.obj: /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/tidrivers_cc13xx_cc26xx_2_21_00_04/packages/ti/drivers/utils/List.h
@@ -190,8 +191,9 @@ main.obj: /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_
 main.obj: /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/rom.h
 main.obj: /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/gpio.h
 main.obj: /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/inc/hw_gpio.h
-main.obj: ../easylink/EasyLink.h
+main.obj: ../receptor.h
 main.obj: ../RF_Com.h
+main.obj: ../easylink/EasyLink.h
 main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/math.h
 main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/_defs.h
 main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/string.h
@@ -202,6 +204,16 @@ main.obj: ../ToServer_Com.h
 main.obj: /home/clx/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h
 main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdio.h
 main.obj: ../util.h
+main.obj: ../protocol.h
+main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdio.h
+main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h
+main.obj: ../transmitter.h
+main.obj: ../protocol.h
+main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdio.h
+main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h
+main.obj: /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/math.h
+main.obj: /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/knl/Clock.h
+main.obj: /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/knl/Task.h
 
 ../main.c: 
 /home/clx/ti/xdctools_3_32_00_06_core/packages/xdc/std.h: 
@@ -374,6 +386,7 @@ main.obj: ../util.h
 /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/linkage.h: 
 /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdio.h: 
 /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdarg.h: 
+/home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/string.h: 
 ../Board.h: 
 /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/tidrivers_cc13xx_cc26xx_2_21_00_04/packages/ti/drivers/Power.h: 
 /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/tidrivers_cc13xx_cc26xx_2_21_00_04/packages/ti/drivers/utils/List.h: 
@@ -393,8 +406,9 @@ main.obj: ../util.h
 /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/rom.h: 
 /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/driverlib/gpio.h: 
 /home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc13xxware_2_04_03_17272/inc/hw_gpio.h: 
-../easylink/EasyLink.h: 
+../receptor.h: 
 ../RF_Com.h: 
+../easylink/EasyLink.h: 
 /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/math.h: 
 /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/_defs.h: 
 /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/string.h: 
@@ -405,3 +419,13 @@ main.obj: ../util.h
 /home/clx/ti/xdctools_3_32_00_06_core/packages/xdc/runtime/Log.h: 
 /home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdio.h: 
 ../util.h: 
+../protocol.h: 
+/home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdio.h: 
+/home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h: 
+../transmitter.h: 
+../protocol.h: 
+/home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdio.h: 
+/home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdlib.h: 
+/home/clx/Software/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/math.h: 
+/home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/knl/Clock.h: 
+/home/clx/ti/tirtos_cc13xx_cc26xx_2_21_00_06/products/bios_6_46_01_37/packages/ti/sysbios/knl/Task.h: 

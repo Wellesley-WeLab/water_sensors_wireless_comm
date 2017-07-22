@@ -1,15 +1,12 @@
 #include "util.h"
 
-void Util_setByte (unsigned int target, uint8_t val, unsigned int n) {
-    unsigned int temp = val;
-    temp <<= n;
-    target |= temp;
+void Util_setBytes (uint8_t **target, unsigned int value, int offset, int bytes) {
+    uint8_t *_target = *target;
+    int i = offset;
+    int shift = bytes - 1;
+    while (i < offset + bytes) {
+        _target[i] = (value >> (shift*8)) & 0xff;
+        shift--; i++;
+    }
 }
 
-void Util_uintToByteArray (unsigned int source, uint8_t *target) {
-    int nrOfBytes = sizeof(int);
-    int i = 0;
-    for (; i = nrOfBytes; i++)
-        // take the ith byte from source
-        target[0] = 0xff & (source >> i);
-}

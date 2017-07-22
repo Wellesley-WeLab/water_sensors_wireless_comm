@@ -15,6 +15,8 @@ C_SRCS += \
 ../ToServer_Com.c \
 ../ccfg.c \
 ../main.c \
+../receptor.c \
+../transmitter.c \
 ../util.c 
 
 GEN_CMDS += \
@@ -33,6 +35,8 @@ C_DEPS += \
 ./ToServer_Com.d \
 ./ccfg.d \
 ./main.d \
+./receptor.d \
+./transmitter.d \
 ./util.d 
 
 GEN_OPTS += \
@@ -44,6 +48,8 @@ OBJS += \
 ./ToServer_Com.obj \
 ./ccfg.obj \
 ./main.obj \
+./receptor.obj \
+./transmitter.obj \
 ./util.obj 
 
 GEN_MISC_DIRS__QUOTED += \
@@ -55,6 +61,8 @@ OBJS__QUOTED += \
 "ToServer_Com.obj" \
 "ccfg.obj" \
 "main.obj" \
+"receptor.obj" \
+"transmitter.obj" \
 "util.obj" 
 
 C_DEPS__QUOTED += \
@@ -63,6 +71,8 @@ C_DEPS__QUOTED += \
 "ToServer_Com.d" \
 "ccfg.d" \
 "main.d" \
+"receptor.d" \
+"transmitter.d" \
 "util.d" 
 
 GEN_FILES__QUOTED += \
@@ -75,6 +85,8 @@ C_SRCS__QUOTED += \
 "../ToServer_Com.c" \
 "../ccfg.c" \
 "../main.c" \
+"../receptor.c" \
+"../transmitter.c" \
 "../util.c" 
 
 

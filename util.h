@@ -8,19 +8,14 @@
 #include <stdint.h>
 
 /**
- * Sets the nth byte of target with the value of val
- * @param target the number to change
- * @param val the byte to put in target
- * @param n position where to put val
+ * Sets the the bytes from offset to (offset + bytes) in target with bytes from value
+ * @param target the array where to put the bytes
+ * @param value the integer where to take the values
+ * @param offset the position in target where to start putting values
+ * @param bytes the number of bytes to take from value and put in target
  */
-void Util_setByte (unsigned int target, uint8_t val, unsigned int n);
+void Util_setBytes (uint8_t **target, unsigned int value, int offset, int bytes);
 
-/**
- * To change an unsigned integer to a byte array of its bytes
- * @param source the integer to split
- * @param target the byte array where to store the data. this array should have at least sizeof(int) bytes of size
- */
-void Util_uintToByteArray (unsigned int source, uint8_t *target);
 
 
 #endif // _UTIL_H__

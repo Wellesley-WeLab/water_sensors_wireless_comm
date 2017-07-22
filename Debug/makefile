@@ -13,6 +13,8 @@ ORDERED_OBJS += \
 "./ToServer_Com.obj" \
 "./ccfg.obj" \
 "./main.obj" \
+"./receptor.obj" \
+"./transmitter.obj" \
 "./util.obj" \
 "./easylink/EasyLink.obj" \
 "./smartrf_settings/smartrf_settings.obj" \
@@ -165,8 +167,8 @@ water_sensor_wireless_comm.hex: $(EXE_OUTPUTS)
 clean:
 	-$(RM) $(GEN_CMDS__QUOTED)$(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)$(GEN_OPTS__QUOTED)
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
-	-$(RM) "CC1310DK_7XD.obj" "RF_Com.obj" "ToServer_Com.obj" "ccfg.obj" "main.obj" "util.obj" "easylink/EasyLink.obj" "smartrf_settings/smartrf_settings.obj" "smartrf_settings/smartrf_settings_predefined.obj" 
-	-$(RM) "CC1310DK_7XD.d" "RF_Com.d" "ToServer_Com.d" "ccfg.d" "main.d" "util.d" "easylink/EasyLink.d" "smartrf_settings/smartrf_settings.d" "smartrf_settings/smartrf_settings_predefined.d" 
+	-$(RM) "CC1310DK_7XD.obj" "RF_Com.obj" "ToServer_Com.obj" "ccfg.obj" "main.obj" "receptor.obj" "transmitter.obj" "util.obj" "easylink/EasyLink.obj" "smartrf_settings/smartrf_settings.obj" "smartrf_settings/smartrf_settings_predefined.obj" 
+	-$(RM) "CC1310DK_7XD.d" "RF_Com.d" "ToServer_Com.d" "ccfg.d" "main.d" "receptor.d" "transmitter.d" "util.d" "easylink/EasyLink.d" "smartrf_settings/smartrf_settings.d" "smartrf_settings/smartrf_settings_predefined.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
