@@ -16,12 +16,13 @@ void readSensorData (uint8_t **data) {
     }
 
     int reservoirId  = THIS_RESERVOIR_ID;
+
     // TODO: read actual data
-    int waterLevel   = 0;
-    int vcc          = 0;
-    int conductivity = 0;
-    int salinity     = 0;
-    int tds          = 0;
+    int waterLevel   = 13;
+    int vcc          = 14;
+    int conductivity = 15;
+    int salinity     = 16;
+    int tds          = 17;
     int pH           = 0xffffffff;
     uint8_t *_data = *data;
     memset(_data, 0, PACKET_LEN);

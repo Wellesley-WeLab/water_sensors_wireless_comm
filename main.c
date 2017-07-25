@@ -42,7 +42,7 @@ int main (void) {
     Task_Params_init(&taskParams);
     taskParams.stackSize = TASK_STACK_SIZE;
     taskParams.stack     = &taskStack;
-    taskHandle           = Task_create(&taskRx, &taskParams, NULL);
+    taskHandle           = Task_create(&taskTx, &taskParams, NULL);
     if (taskHandle == NULL) {
         printf("Unable to create taskRx");
         BIOS_exit(1);
