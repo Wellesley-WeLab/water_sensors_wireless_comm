@@ -14,7 +14,7 @@
 #include "util.h"
 #include "Board.h"
 
-#define DEBUG_SRV_COM
+// #define DEBUG_SRV_COM
 
 /* parameters the configure the UART driver */
 static UART_Params params;

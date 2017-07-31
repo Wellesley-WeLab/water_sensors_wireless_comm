@@ -17,6 +17,7 @@ C_SRCS += \
 ../main.c \
 ../receptor.c \
 ../transmitter.c \
+../uart_ec_ezo.c \
 ../util.c 
 
 GEN_CMDS += \
@@ -37,6 +38,7 @@ C_DEPS += \
 ./main.d \
 ./receptor.d \
 ./transmitter.d \
+./uart_ec_ezo.d \
 ./util.d 
 
 GEN_OPTS += \
@@ -50,6 +52,7 @@ OBJS += \
 ./main.obj \
 ./receptor.obj \
 ./transmitter.obj \
+./uart_ec_ezo.obj \
 ./util.obj 
 
 GEN_MISC_DIRS__QUOTED += \
@@ -63,6 +66,7 @@ OBJS__QUOTED += \
 "main.obj" \
 "receptor.obj" \
 "transmitter.obj" \
+"uart_ec_ezo.obj" \
 "util.obj" 
 
 C_DEPS__QUOTED += \
@@ -73,6 +77,7 @@ C_DEPS__QUOTED += \
 "main.d" \
 "receptor.d" \
 "transmitter.d" \
+"uart_ec_ezo.d" \
 "util.d" 
 
 GEN_FILES__QUOTED += \
@@ -87,6 +92,7 @@ C_SRCS__QUOTED += \
 "../main.c" \
 "../receptor.c" \
 "../transmitter.c" \
+"../uart_ec_ezo.c" \
 "../util.c" 
 
 

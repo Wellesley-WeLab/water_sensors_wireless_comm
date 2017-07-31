@@ -9,13 +9,13 @@
 #include <xdc/runtime/System.h>
 
 /* configuration (frequency and modulation) for the hardware */
-#define RF_COM_CONF EasyLink_Phy_50kbps2gfsk
+#define RF_COM_CONF EasyLink_Phy_625bpsLrm
 /* power configuration to use */
 #define RF_COM_POWER 14 // dB
 /* max data size to send each time */
 #define RF_COM_MAX_PACKET_SIZE EASYLINK_MAX_DATA_LENGTH // bytes
 
-#define DEBUG_RF_COM
+// #define DEBUG_RF_COM
 
 /* main funcions */
 /** To initialize the hardware. should be called before any send/receive operation */

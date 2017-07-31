@@ -13,7 +13,7 @@
 #include <stdlib.h>
 
 // undefine when deploying
-#define RECEPTOR_DEBUG
+// #define RECEPTOR_DEBUG
 
 /**
  * Loops infinitly, receiving data and sending it to server.
