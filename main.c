@@ -25,25 +25,43 @@
 Task_Handle taskHandle;
 static uint8_t taskStack[TASK_STACK_SIZE];
 
+#define RECEPTOR
+//#define TRANSMITTER
 
+#ifdef RECEPTOR
 Void taskRx (UArg a, UArg b) {
     doReception(); // loops forever
 }
+#endif
 
+#ifdef TRANSMITTER
 Void taskTx (UArg a, UArg b) {
     transmitterInit();
     doTransmission(); // loops forever
 }
+#endif
 
 int main (void) {
     Board_initGeneral();
+#ifdef RECEPTOR
     ToServerCom_init();
+#endif
+#ifdef TRANSMITTER
+    UART_init();
+    ADC_init();
+#endif
     
     Task_Params taskParams;
     Task_Params_init(&taskParams);
     taskParams.stackSize = TASK_STACK_SIZE;
     taskParams.stack     = &taskStack;
+#ifdef RECEPTOR
     taskHandle           = Task_create(&taskRx, &taskParams, NULL);
+#endif
+#ifdef TRANSMITTER
+    taskHandle           = Task_create(&taskTx, &taskParams, NULL);
+#endif
+
     if (taskHandle == NULL) {
         printf("Unable to create taskRx");
         BIOS_exit(1);
