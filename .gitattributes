@@ -7,3 +7,4 @@ targetConfigs/* linguist-vendored
 *.defs linguist-vendored
 *cmd linguist-vendored
 *.cfg linguist-vendored
+uart_ec_ezo.* linguist-vendored
